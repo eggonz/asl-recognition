@@ -1,13 +1,13 @@
-import activation
-import losses
-import optimizers
-from datasets.asl_alphabet import AslAlphabet
-from hyperp import TrainingHyperparameters
-from layers import DenseLayer, ActivationLayer, Conv2dLayer, FlattenLayer, MaxPool2dLayer, DropoutLayer
-from metrics import Metric
-from models import Sequential
-from utils.generic import shuffle_data, get_timestamp
-from utils.plot import save_train_info
+from deelemma import activation
+from deelemma import losses
+from deelemma import optimizers
+from deelemma.datasets.asl_alphabet import AslAlphabet
+from deelemma.hyperp import TrainingHyperparameters
+from deelemma.layers import DenseLayer, ActivationLayer, Conv2dLayer, FlattenLayer, MaxPool2dLayer, DropoutLayer
+from deelemma.metrics import Metric
+from deelemma.models import Sequential
+from deelemma.utils.generic import shuffle_data, get_timestamp
+from deelemma.utils.plot import save_train_info
 
 dataset = AslAlphabet('data/asl_alphabet_dataset/', flatten=False, one_hot=True)
 print("Successfully loaded:", dataset)

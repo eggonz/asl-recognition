@@ -2,10 +2,10 @@ import os
 
 import h5py
 
-from layers import DenseLayer, ActivationLayer, DropoutLayer
-from models import Sequential
-from parameters import ParameterInitializer
-from utils.generic import get_timestamp, get_class_instance
+from ..layers import DenseLayer, ActivationLayer, DropoutLayer
+from ..models import Sequential
+from ..parameters import ParameterInitializer
+from .generic import get_timestamp, get_class_instance
 
 
 def save_model(nn: Sequential) -> str:

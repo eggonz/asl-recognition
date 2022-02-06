@@ -8,7 +8,7 @@ import scipy.signal
 import tensorflow as tf
 from PIL import Image, ImageOps
 
-from utils.exceptions import InvalidShapeException
+from .exceptions import InvalidShapeException
 
 
 def load_image(path: str) -> np.ndarray:

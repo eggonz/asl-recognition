@@ -5,8 +5,8 @@ import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import numpy as np
 
-from datasets.mnist import MnistDataset, Mnist
-from utils.generic import easy_conv
+from deelemma.datasets.mnist import MnistDataset, Mnist
+from deelemma.utils.generic import easy_conv
 
 
 def save_asl():

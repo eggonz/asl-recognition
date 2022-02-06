@@ -4,8 +4,8 @@ import os
 import PIL.Image
 import numpy as np
 
-from datasets.base_dataset import ImageDataset
-from utils.generic import one_hot, one_hot_decode
+from .base_dataset import ImageDataset
+from ..utils.generic import one_hot, one_hot_decode
 
 
 class AslAlphabet(ImageDataset):
@@ -152,8 +152,8 @@ if __name__ == '__main__':
     # RGB img shape: (200, 200, 3)
     # alpha=255 in all, RGBA not necessary
 
-    db_path = '../test/data/'
-    ds_path = '../test/data/asl_alphabet_dataset/'
+    db_path = '../../test/data/'
+    ds_path = '../../test/data/asl_alphabet_dataset/'
     AslAlphabet.build_npy_dataset(db_path, ds_path, 100)
     print('Dataset saved')
 

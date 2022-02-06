@@ -3,16 +3,16 @@ from typing import List, Dict, Optional
 
 import numpy as np
 
-from base_layer import LayerGroup, Layer
-from hyperp import TrainingHyperparameters
-from layers import ActivationLayer, DropoutLayer, BatchNormLayer
-from losses import Loss
-from metrics import Metric
-from optimizers import Optimizer
-from parameters import ParameterTensor
-from utils.exceptions import InvalidShapeException, NotConfiguredException
-from utils.generic import split_data
-from utils.plot import print_cols, print_cols_center, SUMMARY_COL_WIDTH
+from .base_layer import LayerGroup, Layer
+from .hyperp import TrainingHyperparameters
+from .layers import ActivationLayer, DropoutLayer, BatchNormLayer
+from .losses import Loss
+from .metrics import Metric
+from .optimizers import Optimizer
+from .parameters import ParameterTensor
+from .utils.exceptions import InvalidShapeException, NotConfiguredException
+from .utils.generic import split_data
+from .utils.plot import print_cols, print_cols_center, SUMMARY_COL_WIDTH
 
 
 class Model:

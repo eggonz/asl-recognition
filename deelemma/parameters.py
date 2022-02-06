@@ -3,7 +3,7 @@ from typing import TypeVar
 
 import numpy as np
 
-from utils.exceptions import InvalidShapeException
+from .utils.exceptions import InvalidShapeException
 
 
 class ParameterInitializer(Enum):

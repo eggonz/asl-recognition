@@ -2,12 +2,12 @@ from typing import Tuple, List, Optional
 
 import numpy as np
 
-from activation import Activation
-from base_layer import Layer, TrainableLayer
-from parameters import ParameterInitializer, ParameterTensor
-from regularizers import Regularizer
-from utils.exceptions import InvalidShapeException
-from utils.generic import conv2d, ConvPadding, rot180, maxpool2d
+from .activation import Activation
+from .base_layer import Layer, TrainableLayer
+from .parameters import ParameterInitializer, ParameterTensor
+from .regularizers import Regularizer
+from .utils.exceptions import InvalidShapeException
+from .utils.generic import conv2d, ConvPadding, rot180, maxpool2d
 
 
 class DenseLayer(TrainableLayer):

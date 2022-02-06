@@ -2,7 +2,7 @@ from typing import List
 
 import numpy as np
 
-from parameters import ParameterTensor
+from .parameters import ParameterTensor
 
 
 class Optimizer:

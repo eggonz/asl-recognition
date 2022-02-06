@@ -3,9 +3,9 @@ from typing import Union, List, Optional, Any
 
 import numpy as np
 
-from parameters import ParameterTensor
-from regularizers import Regularizer
-from utils.exceptions import InvalidShapeException
+from .parameters import ParameterTensor
+from .regularizers import Regularizer
+from .utils.exceptions import InvalidShapeException
 
 
 class Layer:

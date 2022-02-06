@@ -1,15 +1,15 @@
 import time
 
-import activation
-import losses
-import optimizers
-from datasets.mnist import Mnist, MnistDataset
-from hyperp import TrainingHyperparameters
-from layers import DenseLayer, ActivationLayer, DropoutLayer
-from metrics import Metric
-from models import Sequential
-from utils.generic import get_timestamp, shuffle_data
-from utils.plot import save_train_info
+from deelemma import activation
+from deelemma import losses
+from deelemma import optimizers
+from deelemma.datasets.mnist import Mnist, MnistDataset
+from deelemma.hyperp import TrainingHyperparameters
+from deelemma.layers import DenseLayer, ActivationLayer, DropoutLayer
+from deelemma.metrics import Metric
+from deelemma.models import Sequential
+from deelemma.utils.generic import get_timestamp, shuffle_data
+from deelemma.utils.plot import save_train_info
 
 # Test to download dataset
 mnist = Mnist(MnistDataset.EMNIST_MNIST, dir_path='data/emnist/')

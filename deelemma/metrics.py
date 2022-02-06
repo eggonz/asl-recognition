@@ -4,7 +4,7 @@ from typing import Optional
 import numpy as np
 import seaborn as sns
 
-from losses import Loss
+from .losses import Loss
 
 sns.set_theme()
 

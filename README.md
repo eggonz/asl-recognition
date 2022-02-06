@@ -1,15 +1,18 @@
 # Deep Learning Model Making (DeeLeMMa) Toolkit
 
-## Deep Learning framework from scratch
-DeeLeMMa is a toolkit to build Deep Learning models
-with an interface similar to frameworks like tensorflow
-or even pytorch in some aspects.
+DeeLeMMa is a toolkit to build Deep Learning models,
+created from scratch and with an interface based on
+frameworks like tensorflow.
 
 - ``deelemma/``: Source code
-- ``datasets/``: Custom dataset loaders
-- ``test/``: Examples of use
+- ``examples/``: Examples of use
+
+## Installation guide
+Clone the repository and run ``install.sh`` to install
+the _deelemma_ package. Import it in your code to use
+it.
 
 ## ASL Alphabet recognition
 The DeeLeMMa tool was tested with MNIST digit dataset
-and then applied to a ASL Alphabet classification
+and then applied to an ASL Alphabet classification
 problem.

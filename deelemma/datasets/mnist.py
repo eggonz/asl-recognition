@@ -4,8 +4,8 @@ import numpy as np
 import scipy.io
 import tensorflow as tf
 
-from datasets.base_dataset import ImageDataset
-from utils.generic import one_hot
+from .base_dataset import ImageDataset
+from ..utils.generic import one_hot
 
 
 class MnistDataset(Enum):
@@ -148,7 +148,7 @@ class Mnist(ImageDataset):
 if __name__ == '__main__':
     ds1 = Mnist(MnistDataset.TF_KERAS)
     print(ds1)
-    path = '../test/data/emnist/'
+    path = '../../test/data/emnist/'
     ds2 = Mnist(MnistDataset.EMNIST_DIGITS, path)
     print(ds2)
     ds3 = Mnist(MnistDataset.EMNIST_MNIST, path)

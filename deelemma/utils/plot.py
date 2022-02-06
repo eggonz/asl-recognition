@@ -5,7 +5,7 @@ import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
 
-from hyperp import TrainingHyperparameters
+from ..hyperp import TrainingHyperparameters
 
 SUMMARY_COL_WIDTH = 25
 
